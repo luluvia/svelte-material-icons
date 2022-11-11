@@ -7,5 +7,6 @@ export default class Icon extends SvelteComponentTyped<{
   class?: string
   color?: string
   viewBox?: string
+  title?: string
   ariaHidden?: boolean
 }> {}
