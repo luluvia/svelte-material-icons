@@ -67,7 +67,10 @@ const generateComponentSource = (file) => {
   $svg.attr("height", "{height}");
   $svg.attr("class", "{$$$props.class}");
   $svg.attr("viewBox", "{viewBox}");
-  $svg.attr("aria-hidden", "{ariaHidden}");
+    $svg.attr("aria-hidden", "{ariaHidden}");
+  
+  // add title
+  $svg.prepend("{#if title}<title>{title}</title>{/if}");
 
   const $path = $svg.find("> path");
   
