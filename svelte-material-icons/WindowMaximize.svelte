@@ -7,4 +7,4 @@
   export let ariaHidden = false;
 </script>
 
-<svg width="{width}" height="{height}" viewBox="{viewBox}" aria-hidden="{ariaHidden}"><path d="M4,4H20V20H4V4M6,8V18H18V8H6Z" fill="{color}"/></svg>
+<svg width="{width}" height="{height}" viewBox="{viewBox}" class="{$$props.class}" aria-hidden="{ariaHidden}"><path d="M4,4H20V20H4V4M6,8V18H18V8H6Z" fill="${color}"/></svg>
