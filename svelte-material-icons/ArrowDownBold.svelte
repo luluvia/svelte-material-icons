@@ -5,7 +5,8 @@
   export let color = "currentColor";
   export let viewBox = "0 0 24 24";
   export let title;
+  export let desc;
   export let ariaHidden = false;
 </script>
 
-<svg width="{width}" height="{height}" viewBox="{viewBox}" class="{$$props.class}" aria-hidden="{ariaHidden}">{#if title}<title>{title}</title>{/if}<path d="M9,4H15V12H19.84L12,19.84L4.16,12H9V4Z" fill="${color}"/></svg>
+<svg width="{width}" height="{height}" viewBox="{viewBox}" class="{$$props.class}" aria-hidden="{ariaHidden}">{#if title}<title>{title}</title>{/if}{#if desc}<desc>{desc}</desc>{/if}<path d="M9,4H15V12H19.84L12,19.84L4.16,12H9V4Z" fill="${color}"/></svg>
